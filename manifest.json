@@ -1,0 +1,20 @@
+{
+  "name": "Duolingo Spellchecker Enabler",
+  "version": "1.0",
+  "description": "Enable spellchecker for text areas in Duolingo",
+  "icons": {
+    "48": "duo-spellcheck-48.png",
+    "128": "duo-spellcheck-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.duolingo.com/*"
+      ],
+      "js": [
+        "modify-content.js"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}
